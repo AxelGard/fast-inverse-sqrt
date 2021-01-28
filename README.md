@@ -1,9 +1,6 @@
 # fast-inverse-sqrt
 Fast Inverse Square Root — A Quake III Algorithm in WASM 
 
-how ever this seems slower
-
-
 **wasmExports exist in index.js**
 ```js 
 function fastInverseSqrt(number) {
@@ -13,7 +10,16 @@ function fastInverseSqrt(number) {
 }
 
 ```
+
 would love a pull request for some improments.
+
+However it seems slower then in raw js. 
+
+```js
+function inverseSqrt(number) { // in index.js
+    return 1/(number**(1/2));
+}
+```
 
 ## Special thanks to 
 

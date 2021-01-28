@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="../wasm/index.js"></script>
 </head>
 <body>
     <script>
-        setTimeout(() => {
-            console.log(wasmExports.Q_rsqrt(9.3));
-        }, 3000);
+        console.log(inverseSqrt(100.3));
     </script>
 </body>
 </html>

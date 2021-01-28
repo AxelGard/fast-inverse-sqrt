@@ -1,6 +1,8 @@
 #include <stdio.h> 
+#include <emscripten.h>
 
 
+EMSCRIPTEN_KEEPALIVE
 float Q_rsqrt(float number){
     /*
         Fast Inverse Square Root — A Quake III Algorithm
@@ -20,9 +22,4 @@ float Q_rsqrt(float number){
     return y; 
 }   
 
-int main(){
-    float x = Q_rsqrt(9.5);
-    printf("The integer is: %f\n", x);
-    return 0;
-}
 

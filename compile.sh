@@ -1,0 +1,1 @@
+emcc src/fst_inv_sqrt.c -s WASM=1 -o wasm/inv_sqrt.html
